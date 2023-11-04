@@ -1,8 +1,8 @@
 '''8 - Faça um programa que pergunte o preço de três produtos e informe qual produto você deve comprar, sabendo que a decisão é sempre pelo mais barato.'''
 
-produto01 = float(0.55)
-produto02 = float(3.49)
-produto03 = float(1.44)
+produto01 = float(input("Digite o valor do primeiro produto: "))
+produto02 = float(input("Digite o valor do segundo produto: "))
+produto03 = float(input("Digite o valor do terceiro produto: "))
 
 if(produto01 < produto02) and (produto01 < produto03):
     print(f"O produto 1 do valor R$ {produto01}, é o mais barato")

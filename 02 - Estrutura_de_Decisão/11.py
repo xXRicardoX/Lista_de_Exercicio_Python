@@ -17,14 +17,17 @@ if(salario <= 280.00):
   reajuste = salario * 0.20
   valor_ajustado = reajuste + salario
   print(f"O seu salario atualamente é R$ {salario:.2f} e foi ajustado em 20% teve um aumento de {reajuste:.2f} e foi para um total de R$ {valor_ajustado:.2f}")
+  
 elif (salario > 280.00) and (salario <= 700.00):
   reajuste = salario * 0.15
   valor_ajustado = reajuste + salario
   print(f"O seu salario atualamente é R$ {salario:.2f} e foi ajustado em 15% teve um aumento de {reajuste:.2f} e foi para um total de R$ {valor_ajustado:.2f}")
+
 elif (salario > 700.00) and (salario <= 1500.00):
   reajuste = salario * 0.10
   valor_ajustado = reajuste + salario
   print(f"O seu salario atualamente é R$ {salario:.2f} e foi ajustado em 10% teve um aumento de {reajuste:.2f} e foi para um total de R$ {valor_ajustado:.2f}")
+
 elif (salario > 1500.00):
   reajuste = salario * 0.05
   valor_ajustado = reajuste + salario
