@@ -7,44 +7,49 @@
 valorSaque = int(input("Digite o valor do saque: "))
 
 if 10 <= valorSaque <= 600:
-    duzentoReais = valorSaque // 200 
-    cemReais = (valorSaque % 200) // 100
-    cinquetaReais = ((valorSaque % 200) % 100) // 50
-    dezReais = (((valorSaque % 200) % 100) % 50) // 10
-    cincoReais = ((((valorSaque % 200) % 100) % 50) % 10) // 5
-    doisReais = (((((valorSaque % 200) % 100) % 50) % 10) % 5) // 2
-    
-    print("A quantidade de notas que serão imprimidas será")
-    if duzentoReais != 0:
-        if duzentoReais == 1:
-            print(f'{duzentoReais} nota de duzentos reais')
-        else:
-          print(f'{duzentoReais} notas de duzentos reais')
-          
-    if cemReais != 0:
-        if cemReais == 1:
-            print(f'{cemReais} nota de cem reais')
-        else:
-          print(f'{cemReais} notas de cem reais')
-          
-    if cinquetaReais != 0:
-        if cinquetaReais == 1:
-            print(f"{cinquetaReais} nota de cinquetas reais")
-        else:
-          print(f"{cinquetaReais} notas de cinquetas reais")
-          
-    if dezReais != 0:
-        if dezReais == 1:
-            print(f"{dezReais} nota de dez reais")
-        else:
-            print(f"{dezReais} notas de dez reais")
-    if cincoReais != 0:
-        if cincoReais == 1:
-            print(f"{cincoReais} nota de cinco reais")
-        else:
-          print(f"{cincoReais} notas de cinco reais")
-    if doisReais != 0:
-        if doisReais == 1:
-            print(f"{doisReais} nota de dois reais")
-        else:
-          print(f"{doisReais} notas de dois reais")
+    if valorSaque % 10 != 3:
+        duzentoReais = valorSaque // 200 
+        cemReais = (valorSaque % 200) // 100
+        cinquetaReais = ((valorSaque % 200) % 100) // 50
+        dezReais = (((valorSaque % 200) % 100) % 50) // 10
+        cincoReais = ((((valorSaque % 200) % 100) % 50) % 10) // 5
+        doisReais = (((((valorSaque % 200) % 100) % 50) % 10) % 5) // 2
+        
+        print(f"O valor informando é {valorSaque} reais\nA quantidade de notas que serão imprimidas será")
+        if duzentoReais != 0:
+            if duzentoReais == 1:
+                print(f'{duzentoReais} nota de duzentos reais')
+            else:
+                print(f'{duzentoReais} notas de duzentos reais')
+            
+        if cemReais != 0:
+            if cemReais == 1:
+                print(f'{cemReais} nota de cem reais')
+            else:
+                print(f'{cemReais} notas de cem reais')
+            
+        if cinquetaReais != 0:
+            if cinquetaReais == 1:
+                print(f"{cinquetaReais} nota de cinquetas reais")
+            else:
+                print(f"{cinquetaReais} notas de cinquetas reais")
+            
+        if dezReais != 0:
+            if dezReais == 1:
+                print(f"{dezReais} nota de dez reais")
+            else:
+                print(f"{dezReais} notas de dez reais")
+        if cincoReais != 0:
+            if cincoReais == 1:
+                print(f"{cincoReais} nota de cinco reais")
+            else:
+                print(f"{cincoReais} notas de cinco reais")
+        if doisReais != 0:
+            if doisReais == 1:
+                print(f"{doisReais} nota de dois reais")
+            else:
+                print(f"{doisReais} notas de dois reais")
+    else:
+      print("Não imprimimos nota de 1 real\nOperação cancelada")
+else:
+    print("O caixa não imprimi valor maior que 600 reais e menor que 10 reais!!\nOperação cancelada")
