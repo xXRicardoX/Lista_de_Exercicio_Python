@@ -3,9 +3,9 @@
 """
 
 informeUmNumero = float(input("Digite um valor: "))
-informeUmNumeroInteiro = round(informeUmNumero)
 
-if informeUmNumero != informeUmNumeroInteiro:
+
+if informeUmNumero != round(informeUmNumero):
     print(f"{informeUmNumero} o valor desse numero e decimal!! ")
 else:
-    print(f"{informeUmNumeroInteiro} o valor desse numero e inteiro!!")
+    print(f"{round(informeUmNumero)} o valor desse numero e inteiro!!")
