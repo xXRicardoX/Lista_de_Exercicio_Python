@@ -14,9 +14,8 @@ Exemplo com intervalo numérico:
 for i in range(5):
     # código a ser repetido 5 vezes, com i variando de 0 a 4
     print(i)
+    
 
-markdown
-Copy code
 ## Iteração Direta:
 
 O loop `for` percorre diretamente os elementos da sequência, tornando-o útil quando você precisa acessar cada item.
