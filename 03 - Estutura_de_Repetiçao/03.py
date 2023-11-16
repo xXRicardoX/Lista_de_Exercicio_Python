@@ -6,7 +6,7 @@ c - Salário: maior que zero;
 d - Sexo: 'f' ou 'm';
 e - Estado Civil: 's', 'c', 'v', 'd'; """
 
-nome = str(input("Digite o seu nome: "))
+nome = str(input("Digite o seu nome: ")).upper()
 idade = int(input("Digite a sua idade: "))
 salario = float(input("Digite o seu sálario: "))
 sexo = str(input("Digite F para feminino ou M para masculino: ")).upper()
@@ -46,7 +46,7 @@ else:
     print("Dados validados com sucesso!")
     print(f"Nome: {nome}")
     print(f"Idade: {idade}")
-    print(f"Salario: R${salario}")
+    print(f"Salario: R${salario:.2f}")
     if(sexo == "F"):
         print("Sexo: Feminino")
     else:
@@ -59,14 +59,3 @@ else:
         print("Estado civil: Viuvo")
     else:
         print("Estado civil: Divorciado")
-
-
-
-
-
-
-
-
-
-
-# 
