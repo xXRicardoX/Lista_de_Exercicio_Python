@@ -7,4 +7,4 @@ for item in range(5):
     else:
         if numero > maior:
             maior = numero
-print("O maior numero é:", maior)
+print(f"O maior numero é: {maior}")
