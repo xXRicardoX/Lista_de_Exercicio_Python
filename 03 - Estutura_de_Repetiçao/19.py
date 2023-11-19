@@ -1,3 +1,5 @@
+"""19 - Altere o programa anterior para que ele aceite apenas números entre 0 e 1000."""
+
 conjunto_numerico = int(input("Digite a quantidade de valores para somar: "))
 soma = 0
 if conjunto_numerico >= 0 and conjunto_numerico <= 1000:
